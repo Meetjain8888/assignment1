@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms demo</title>
+</head>
+<body>
+    <h1>forms demo</h1>
+    <form action="/tacos">
+        <p>
+        <label for="username">enter a username:</label>
+        <input id="username" type="text" placeholder="username" NAME="USERNAME">
+        </p>
+        <p>
+        <label for="password">enter a password</label>
+        <input id="password" type="password" placeholder="password" NAME="PASSWORD">
+        </p>
+        <BUTTON>IN THE MIDDLE!</BUTTON>
+        <p>
+            <label for="color">enter a color</label>
+        <input type="color" id="color" NAME="COLOR">
+        </p>
+        <p>
+            <label for="number">enter a number</label>
+        <input type="number" placeholder="enter a number" id="number" NAME="NUMBER" min="1" max="1000" step="3">
+        </p>
+        <button>submit</button>
+        <INPUT TYPE="SUBMIT" VALUE="CLICK ME">
+    </form>
+    <h2>hijacking searches</h2>
+    <h3>search google</h3>
+    <FORM ACTION="https://www.google.com/search">
+        <INPUT TYPE="TEXT" NAME="Q">
+            <BUTTON>SEARCH GOOGLE</BUTTON>
+    </FORM>
+    <h3>search youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>search youtube</button>
+    </form>
+    <h2>more inputs</h2>
+    <form action="/birds"></form>
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">i agree to everything.</label>
+   <button>submit</button> 
+   <p>
+    <label for="mj">mj:</label>
+    <input type="radio" name="size" id="mj" value="mj">
+    <label for="mk">mk:</label>
+    <input type="radio" name="size" id="mk" value="mk">
+    <label for="mm">mm:</label>
+    <input type="radio" name="size" id="mm" value="mm">
+   </p>
+   <p>
+    <label for="location">please select a location</label>
+    <select name="location" id="location">
+    <option value="rajasthan">rajasthan</option>
+    <option value="karnataka">karnataka</option>
+    <option value="maharashtra">maharashtra</option>
+    </select>
+   </p>
+   <p>
+    <label for="cheese">amount of cheese:</label>
+    <input type="range" id="cheese" min="0" max="100" step="6" name="cheese_bubble">
+   </p>
+   <p>
+    <label for="requests">any special request?</label>
+    <br>
+    <textarea id="requests" cols="30" rows="10" name="requests?" placeholder="write something here..."></textarea>
+   </p>
+   <button>submit</button>
+   <h2>validations demo</h2>
+   <form action="/dummy">
+    <label for="first">enter first name</label>
+    <input type="text" name="first" id="first" required>
+    <p>
+    <label for="username">username</label>
+    <input type="text" id="username" name="username" minlength="5" maxlength="15" required>
+</p>
+<p>
+    <input type="email" required>
+    <input type="url" required>
+</p>
+    <button>submit</button>
+   </form>
+</body>
+</html>
